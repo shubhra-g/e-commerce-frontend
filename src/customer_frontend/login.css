@@ -1,0 +1,80 @@
+/* Full-Page Background Image */
+body, .login-background {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; /* Replace with the path to your background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent to contrast against the background image */
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Website Title */
+.login-title {
+    font-size: 2.5em;
+    color: #ff5722;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Welcome Heading */
+.login-heading {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Input Styling */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ff5722;
+    border-radius: 30px;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #ff8a65;
+    background-color: #fce4ec;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff8a65;
+}
+
+/* Response Message */
+.response-message {
+    color: #d32f2f;
+    margin-top: 15px;
+    font-size: 1em;
+}

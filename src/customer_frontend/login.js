@@ -24,7 +24,7 @@ function Login() {
 
         if (response.access) {
             setMessage("Login successful!");
-            navigate("/blank-page");
+            navigate("/allproduct");
         } else {
             setMessage("Invalid credentials. Please try again.");
         }

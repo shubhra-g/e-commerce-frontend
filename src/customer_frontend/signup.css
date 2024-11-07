@@ -3,7 +3,7 @@ body, .signup-background {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; /* Replace with the path to your background image */
+    background: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -11,14 +11,24 @@ body, .signup-background {
     font-family: Arial, sans-serif;
 }
 
-/* Signup Container */
+/* Container holding the form and image side-by-side */
 .signup-container {
+    display: flex;
     background: rgba(255, 255, 255, 0.85);
-    padding: 40px;
     border-radius: 20px;
-    max-width: 400px;
+    max-width: 900px;
     width: 100%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left Side: Form Styling */
+.signup-form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
@@ -77,4 +87,20 @@ body, .signup-background {
     color: #d32f2f;
     margin-top: 15px;
     font-size: 1em;
+}
+
+/* Right Side: Image Styling */
+.signup-image-container {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15); /* Optional overlay effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.signup-image-container img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
 }

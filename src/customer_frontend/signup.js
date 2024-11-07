@@ -36,57 +36,62 @@ function Signup() {
     return (
         <div className="signup-background">
             <div className="signup-container">
-                <h1 className="signup-title">ShopEase</h1>
-                <h2 className="signup-heading">Create Your Account</h2>
-                <form className="signup-form" onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        name="customer_name"
-                        placeholder="Name"
-                        value={formData.customer_name}
-                        onChange={handleChange}
-                        className="form-input"
-                        required
-                    />
-                    <input
-                        type="text"
-                        name="customer_address"
-                        placeholder="Address"
-                        value={formData.customer_address}
-                        onChange={handleChange}
-                        className="form-input"
-                        required
-                    />
-                    <input
-                        type="text"
-                        name="customer_phoneNo"
-                        placeholder="Phone Number"
-                        value={formData.customer_phoneNo}
-                        onChange={handleChange}
-                        className="form-input"
-                        required
-                    />
-                    <input
-                        type="text"
-                        name="customer_username"
-                        placeholder="Username"
-                        value={formData.customer_username}
-                        onChange={handleChange}
-                        className="form-input"
-                        required
-                    />
-                    <input
-                        type="password"
-                        name="customer_password"
-                        placeholder="Password"
-                        value={formData.customer_password}
-                        onChange={handleChange}
-                        className="form-input"
-                        required
-                    />
-                    <button type="submit" className="submit-btn">Sign Up</button>
-                </form>
-                {message && <p className="response-message">{message}</p>}
+                <div className="signup-form-container">
+                    <h1 className="signup-title">ShopEase</h1>
+                    <h2 className="signup-heading">Create Your Account</h2>
+                    <form className="signup-form" onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            name="customer_name"
+                            placeholder="Name"
+                            value={formData.customer_name}
+                            onChange={handleChange}
+                            className="form-input"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="customer_address"
+                            placeholder="Address"
+                            value={formData.customer_address}
+                            onChange={handleChange}
+                            className="form-input"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="customer_phoneNo"
+                            placeholder="Phone Number"
+                            value={formData.customer_phoneNo}
+                            onChange={handleChange}
+                            className="form-input"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="customer_username"
+                            placeholder="Username"
+                            value={formData.customer_username}
+                            onChange={handleChange}
+                            className="form-input"
+                            required
+                        />
+                        <input
+                            type="password"
+                            name="customer_password"
+                            placeholder="Password"
+                            value={formData.customer_password}
+                            onChange={handleChange}
+                            className="form-input"
+                            required
+                        />
+                        <button type="submit" className="submit-btn">Sign Up</button>
+                    </form>
+                    {message && <p className="response-message">{message}</p>}
+                </div>
+                <div className="signup-image-container">
+                    <img src="image.png" alt="E-commerce Illustration" />
+                </div>
             </div>
         </div>
     );

@@ -34,7 +34,11 @@ function Login() {
         <div className="login-background">
             <div className="login-container">
                 <h1 className="login-title">ShopEase</h1>
-                <h2 className="login-heading">Welcome Back! </h2>
+                <h2 className="login-heading">
+                    {formData.customer_username 
+                        ? `Welcome back, ${formData.customer_username}` 
+                        : "Login to your account"}
+                </h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <input
                         type="text"
